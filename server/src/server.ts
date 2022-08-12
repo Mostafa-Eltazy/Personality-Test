@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import questionRouter from "./routes/question.routes";
+import questionRouter from "./routes/questions.routes";
 import errorHandlerMiddleware from "./middleware/error.handler";
 
 const server = express();
