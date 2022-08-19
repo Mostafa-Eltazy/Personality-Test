@@ -19,12 +19,12 @@ const HomeLayout = () => {
         <div className="d-flex justify-content-center">
           {isLoading || isFetching ? (
             <>
-              <span className="mb-3"> Fetching your documents ... </span>
+              <span className="mb-3"> Fetching your Questions ... </span>
               <Spinner animation="border" variant="primary" className="mb-4" />
             </>
           ) : (
             <>
-              <Questionaier questions_list={data} />
+              <Questionaier questions_list={data?.map((q)=>{return {...q, selection:""} })} />
             </>
           )}
         </div>

@@ -22,5 +22,18 @@
 
     }
   }
+
+  &_selected {
+
+    background: linear-gradient( rgba(229, 216, 216, 0.6),rgba(147, 173, 193, 0.6));
+    border-radius: 1.25em;
+    font-size: 18px;
+    &:hover {
+      border-radius: 1.25em;
+      cursor: pointer;
+      background: linear-gradient( rgba(255, 255, 255, 0.6),rgba(188, 216, 238, 0.6));
+
+    }
+  }
 }
 

@@ -4,9 +4,11 @@ const QuestionCard = ({
   question_no,
   question,
   answers,
+  selection,
   accumelator,
   select,
 }) => {
+
   return (
     <div className="mt-4 px-4 question-card">
       <h4 className="mt-3 mb-4">{question}</h4>
@@ -14,7 +16,7 @@ const QuestionCard = ({
         {answers?.map((a) => {
           return (
             <p
-              className="question-card_answer p-3"
+              className={`p-3 ${selection.class === a.class ? "question-card_selected" : "question-card_answer"}`}
               onClick={() => {
                 select(question_no, a, a.class)
               }}

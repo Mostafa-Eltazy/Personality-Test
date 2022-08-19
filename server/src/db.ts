@@ -29,7 +29,7 @@ const db = [
     ],
   },
   {
-    text: "tazttttttttttttttttttttttttttttttttr life story and personal woes. You:",
+    text: "tazy life story and personal woes. You:",
     answers: [
       {
         text: "Don’t dare to interrupt them",
