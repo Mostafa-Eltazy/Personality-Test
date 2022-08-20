@@ -19,7 +19,6 @@ const Questionaier = ({ questions_list }) => {
         ext += selectionList[answer].value
       }
     }
-    console.log('dsdsd', { int, ext })
     return { int, ext }
   }
   const selectAnswer = (question_no, answer) => {
@@ -52,7 +51,7 @@ const Questionaier = ({ questions_list }) => {
         />
       ) : (
         <>
-          <span> question ({questionNo + 1}/10)</span>
+          <span> question ({questionNo + 1}/{questions_list.length})</span>
           {questions_list.slice(questionNo, questionNo + 1).map((q) => {
             return (
               <QuestionCard

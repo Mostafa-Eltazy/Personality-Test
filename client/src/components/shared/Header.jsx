@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/" onClick={() => setToActive('docs')} style={{ textDecoration: 'none', color: '#000' }}>
           <div className="d-flex align-items-center">
             <h1>
-              <strong>DOX</strong>
+              <strong>Test</strong>
             </h1>
           </div>
         </Link>
